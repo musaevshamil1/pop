@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts {
+    text-align: right;
+}
+
+/*обо мне*/
+.about {
+    margin-bottom: 30px;
+}
+
+.hobbies-socials {
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.hobbies, .socials {
+    flex: 1;
+    border: 1px solid green;
+}
+.hs:hover{
+    cursor: pointer;
+    color: green
+}
+.hobbies {
+    border-right: 1px solid green; 
+}
+
+.hobbies h3, .socials h3 {
+    text-align: center;
+    color: green;
+    margin-bottom: 15px;
+    border-bottom: 1px solid  green;
+}
+
+.hobbies ul, .socials ol {
+    padding-left: 150px;
+    padding-bottom: 8px;
+}
+
+.socials ol li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*Технологии*/
+.section-title {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+    /*transition: all 0.2s ease;*/
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px
+}
+.tech-item img {
+    width: 60px;
+}
+.tech-item:hover {
+  box-shadow: 0 4px 15px 0 #58a13b;
+  cursor: pointer;
+  background: white;
+  transform: translatey(4px);
+}
+
+/*Форма*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: green;
+}
+
+textarea {
+    height: 120px;
+}
+
+.submit-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+.submit-btn:hover {
+    background-color: #009600fb;
+}
